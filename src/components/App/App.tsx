@@ -5,7 +5,7 @@ import { Loading } from '../Loading/Loading';
 import { fetchSpaceContainerImg, fetchTodaysPic } from '../Util/ApiCalls';
 import { useState, useEffect } from 'react';
 
-interface nasaPicTodayInfo {
+interface todayNasaApi {
   date?: string
   explanation?: string
   hdurl?: string
@@ -38,7 +38,7 @@ export const App: React.FC = () => {
       <h1 className='header'>Spacestagram</h1>
       <h2 className='subheader'>Brought to you by NASA's image API</h2>
       { isLoading && <Loading /> }
-      <SpaceCardContainer spaceData={todayData}/>
+      <SpaceCardContainer todayNasaApi={todayData}/>
     </div>
   );
 }
