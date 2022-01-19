@@ -30,7 +30,7 @@ export const App: React.FC = () => {
     // .then(data => console.log(data))
     .then(data => setTodayData(data))
     .then(() => setIsLoading(false))
-    .catch(error => console.log(error))
+    .catch(error => setError(error))
   }
 
   return (
