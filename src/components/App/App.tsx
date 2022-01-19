@@ -17,16 +17,18 @@ interface nasaPicTodayInfo {
 }
 
 export const App: React.FC = () => {
-  const [spaceData, setSpaceData] = useState<any>([]);
+  const [todayData, setTodayData] = useState<any>([]);
   const [error, setError] = useState<string>('');
   const [isLoading, setIsLoading ] = useState<boolean>(true);
 
-  
+  useEffect(() => {
+    getTodayData()
+  }, []);
 
-  const getData = async () => {
+  const getTodayData = async () => {
     fetchTodaysPic()
-    // .then(data => console.log(data))
-    .then(data => spaceData(data))
+    .then(data => console.log(data))
+    // .then(data => setTodayData(data))
     .catch(error => console.log(error))
   }
 
