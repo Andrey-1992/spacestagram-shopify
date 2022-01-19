@@ -1,0 +1,7 @@
+.space-card-container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  background-color: whitesmoke;
+  overflow: auto;
+  padding: 5%;
+}
