@@ -1,5 +1,6 @@
 import React from 'react';
 import './SpaceCardContainer.css';
+import { SpaceCard } from '../SpaceCard/SpaceCard';
 
 interface todayNasaApi {
   date?: string
