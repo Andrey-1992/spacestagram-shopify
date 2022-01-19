@@ -44,3 +44,9 @@ h1 {
   transform: scale(1.08);
 }
 
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 300%;
+  }
+}
+
