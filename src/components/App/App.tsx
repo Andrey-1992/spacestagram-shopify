@@ -38,8 +38,9 @@ export const App: React.FC = () => {
         className='fetch-data-btn'
         onClick={() => getTodayData()}
       >Search more pictures</button>
-      { isLoading && <Loading /> }
-      <SpaceCardContainer nasaApi={nasaData}/>
+      {/* { isLoading && <Loading /> } */}
+      {/* <SpaceCardContainer nasaApi={nasaData}/> */}
+      <Loading />
     </div>
   );
 }
