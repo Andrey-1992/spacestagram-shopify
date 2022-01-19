@@ -2,7 +2,7 @@ import React from 'react';
 import './SpaceCardContainer.css';
 import { SpaceCard } from '../SpaceCard/SpaceCard';
 
-interface todayNasaApi {
+interface nasaApiData {
   date?: string
   explanation?: string
   hdurl?: string
@@ -13,15 +13,15 @@ interface todayNasaApi {
   copyright?: string
 }
 interface Props {
-  todayNasaApi?: todayNasaApi
+  nasaApi?: Array<nasaApiData>
 }
 
-export const SpaceCardContainer: React.FC<Props> = ({ todayNasaApi}) => {
+export const SpaceCardContainer: React.FC<Props> = ({nasaApi}) => {
+  
 
   return (
     <div className="SpaceCardContainer">
       <p>Space Card Container</p>
-      <SpaceCard nasaData={todayNasaApi} />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { Loading } from '../Loading/Loading';
 import { fetchSpaceContainerImg, fetchTodaysPic } from '../Util/ApiCalls';
 import { useState, useEffect } from 'react';
 
-interface todayNasaApi {
+interface nasaApiData {
   date?: string
   explanation?: string
   hdurl?: string
@@ -17,7 +17,7 @@ interface todayNasaApi {
 }
 
 export const App: React.FC = () => {
-  const [todayData, setTodayData] = useState<any>([]);
+  const [nasaData, setNasaData] = useState<any>([]);
   const [error, setError] = useState<string>('');
   const [isLoading, setIsLoading ] = useState<boolean>(true);
 
@@ -26,9 +26,9 @@ export const App: React.FC = () => {
   }, []);
 
   const getTodayData = async () => {
-    fetchTodaysPic()
+    fetchSpaceContainerImg()
     // .then(data => console.log(data))
-    .then(data => setTodayData(data))
+    .then(data => setNasaData(data))
     .then(() => setIsLoading(false))
     .catch(error => setError(error))
   }
@@ -38,7 +38,7 @@ export const App: React.FC = () => {
       <h1 className='header'>Spacestagram</h1>
       <h2 className='subheader'>Brought to you by NASA's image API</h2>
       { isLoading && <Loading /> }
-      <SpaceCardContainer todayNasaApi={todayData}/>
+      <SpaceCardContainer nasaApi={nasaData}/>
     </div>
   );
 }
