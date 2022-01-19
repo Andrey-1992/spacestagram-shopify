@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Spacestagram
+_Shopify Challenge for Summer 2022 Frontend Internship. [Spacestagram](https://spacestagram.surge.sh/)_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of Contents
+  - [Abstract](#abstract)
+  - [Technologies](#technologies)
+  - [Code Architecture](#code-architecture)
+  - [Illustrations](#illustrations)
+  - [Install + Setup](#set-up)
+  - [Features](#features)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
 
-In the project directory, you can run:
+## Abstract
+	
+This application was built for the Shopify Front End Developer Intern Challenge. This application uses the data from the NASA's APIs. Each photo displays a descriptive data of the camera name and the date it was captured. The user is able to like and unlike each photo. 
+  
 
-### `npm start`
+## Technologies
+<p align="left">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" alt="html5"/>
+  <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img alt="Cypress" src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e"/>
+  <img alt="Visual Studio" src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white"/>  
+  <img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github" />
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Code Architecture
 
-### `npm test`
+  - __src__
+     - __App__
+       - [App.css](src/components/App/App.css)
+       - [App.tsx](src/components/App/App.tsx)
+     - __SpaceCardContainer__
+       - [SpaceCardContainer.css](src/componentsSpaceCardContainer/SpaceCardContainer.css)
+       - [SpaceCardContainer.tsx](src/components/SpaceCardContainer/SpaceCardContainer.tsx)
+     - __SpaceCard__
+       - [SpaceCard.css](src/components/SpaceCard/SpaceCard.css)
+       - [SpaceCard.tsx](src/components/SpaceCard/SpaceCard.tsx)
+     - __Loader__
+       - [Loading.css](src/components/Loading/Loading.css)
+       - [Loading.tsx](src/components/Loading/Loading.tsx)
+     - [index.css](src/index.css)
+     - [index.tsx](src/index.tsx)
+     - __util__
+       - [ApiCalls.js](src/components/Util/ApiCalls.tsx)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Illustrations
 
-### `npm run build`
+_Desktop View_
+<img width="1299" alt="Spacestagram - Desktop View" src="https://user-images.githubusercontent.com/78002374/150081547-b34afd5a-70b4-4832-9ae2-f9c1395be583.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Mobile View_
+<img width="497" alt="Spacestagram - Mobile View" src="https://user-images.githubusercontent.com/78002374/150081609-0d4e1cd9-958c-4e45-a0b5-0991270f5c04.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Lighthouse Accessibility Test_
+<img width="504" alt="Spacestagram - Accessibility Test" src="https://user-images.githubusercontent.com/78002374/150081629-7f37bf99-641f-4e65-b092-56960c0dffb8.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Install + Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone down the Repository
+- cd into repository
+- run `npm install`
+- run `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Desktop, Ipad and Mobile View
+- User can like or unlike an image
+- Loading Screen shows as site is fetching data
+- 100% accessibility report on Lighthouse
 
-## Learn More
+## Contributors
+  - [Andrey Bermudez](https://github.com/Andrey-1992)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Specs
+  - The project spec can be found [here](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit#heading=h.l4jllv59h2hm)
+
