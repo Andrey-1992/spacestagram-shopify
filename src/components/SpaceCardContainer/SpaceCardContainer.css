@@ -1,6 +1,7 @@
 .space-card-container {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%;
   background-color: whitesmoke;
   overflow: auto;
   padding: 5%;
