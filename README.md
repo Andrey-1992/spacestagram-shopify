@@ -14,7 +14,7 @@ _Shopify Challenge for Summer 2022 Frontend Internship. [Spacestagram](https://s
 
 ## Abstract
 	
-This application was built for the Shopify Front End Developer Intern Challenge. This application uses the data from the NASA's APIs. Each photo displays a descriptive data of the camera name and the date it was captured. The user is able to like and unlike each photo. 
+This application was built for the Shopify Front End Developer Intern Challenge. This application uses the data from the NASA's APIs. Each photo displays a descriptive data of title, description and the date it was captured. The user is able to like and unlike each photo. 
   
 
 ## Technologies
