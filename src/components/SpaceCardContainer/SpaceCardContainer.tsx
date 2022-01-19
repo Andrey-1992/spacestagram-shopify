@@ -1,8 +1,6 @@
 import React from 'react';
 import './SpaceCardContainer.css';
 import { SpaceCard } from '../SpaceCard/SpaceCard';
-import { useState } from 'react';
-
 interface nasaApiData {
   date?: string
   explanation?: string

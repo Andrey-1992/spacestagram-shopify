@@ -1,5 +1,6 @@
 import React from 'react';
 import './SpaceCard.css';
+import { useState } from 'react';
 interface Props {
   key?: number
   id?: number
@@ -10,6 +11,8 @@ interface Props {
 }
 
 export const SpaceCard: React.FC<Props> = ({ key, id, title , date, url, explanation}) => {
+  const [isFavorite, setIsFavorite] = useState<boolean>(false)
+
   return (
     <div className='space-card' key={key}>
       <img className='space-image'  src={url} alt={title}/>
