@@ -24,7 +24,7 @@ export const SpaceCard: React.FC<Props> = ({ key, id, title , date, url, explana
       <button
         className='like-button'
         onClick={() => setIsFavorite(!isFavorite) }
-      >{isFavorite ? 'Liked!' : 'like' }</button>
+      >{isFavorite ? 'Liked!' : 'Like' }</button>
       <button 
         className="show-img-explanation" onClick={() => setShowExplanation(!showExplanation)}
       >{!showExplanation? '+' : '-'}</button>
