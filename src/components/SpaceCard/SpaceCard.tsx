@@ -1,23 +1,14 @@
 import React from 'react';
 import './SpaceCard.css';
-
-interface todayNasaApi {
-  date?: string
-  explanation?: string
-  hdurl?: string
-  media_type?: string
-  service_version?: string
-  title?: string
-  url?: string
-  copyright?: string
-}
 interface Props {
-  nasaData?: todayNasaApi
+  key?: number
+  title?: string
 }
 
-export const SpaceCard: React.FC<Props> = ({ nasaData }) => {
+export const SpaceCard: React.FC<Props> = ({ key, title }) => {
   return (
     <div className="SpaceCard">
+      {title}
     </div>
   );
 }
