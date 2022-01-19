@@ -16,3 +16,17 @@ h3 {
   background-size: cover;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1000px) {
+  .error-img {
+    width: 700px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .error-img {
+    width: 400px;
+    height: 400px;
+  }
+}
