@@ -1,5 +1,5 @@
 # Spacestagram
-_Shopify Challenge for Summer 2022 Frontend Internship. [Spacestagram](https://spacestagram.surge.sh/)_
+_Shopify Challenge for Summer 2022 Frontend Internship. [spacestagram-shopify](https://shopify-spaces-challenge.herokuapp.com/)_
 
 
 ## Table of Contents
