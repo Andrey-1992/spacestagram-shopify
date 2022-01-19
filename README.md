@@ -45,10 +45,10 @@ This application was built for the Shopify Front End Developer Intern Challenge.
      - __Loader__
        - [Loading.css](src/components/Loading/Loading.css)
        - [Loading.tsx](src/components/Loading/Loading.tsx)
+      - __Util__
+       - [ApiCalls.js](src/components/Util/ApiCalls.tsx)
      - [index.css](src/index.css)
      - [index.tsx](src/index.tsx)
-     - __Util__
-       - [ApiCalls.js](src/components/Util/ApiCalls.tsx)
 
 ## Illustrations
 
