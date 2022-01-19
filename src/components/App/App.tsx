@@ -27,8 +27,9 @@ export const App: React.FC = () => {
 
   const getTodayData = async () => {
     fetchTodaysPic()
-    .then(data => console.log(data))
-    // .then(data => setTodayData(data))
+    // .then(data => console.log(data))
+    .then(data => setTodayData(data))
+    .then(() => setIsLoading(false))
     .catch(error => console.log(error))
   }
 
@@ -36,7 +37,7 @@ export const App: React.FC = () => {
     <div className="App">
       <h1 className='header'>Spacestagram</h1>
       <h2 className='subheader'>Brought to you by NASA's image API</h2>
-      <Loading />
+      { isLoading && <Loading /> }
       <SpaceCardContainer />
     </div>
   );
