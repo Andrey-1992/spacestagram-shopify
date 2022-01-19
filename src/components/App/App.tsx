@@ -38,7 +38,7 @@ export const App: React.FC = () => {
       <h1 className='header'>Spacestagram</h1>
       <h2 className='subheader'>Brought to you by NASA's image API</h2>
       { isLoading && <Loading /> }
-      <SpaceCardContainer />
+      <SpaceCardContainer spaceData={todayData}/>
     </div>
   );
 }
