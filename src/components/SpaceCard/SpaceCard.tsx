@@ -11,10 +11,10 @@ interface Props {
 
 export const SpaceCard: React.FC<Props> = ({ key, id, title , date, url, explanation}) => {
   return (
-    <div className="SpaceCard">
-      {title}
-      {date}
-      {url}
+    <div className='space-card' key={key}>
+      <img className='space-image'  src={url} alt={title}/>
+      <h2 className='camera-name'>{title}</h2>
+      <h2 className='capture-date'>{date}</h2>
       {explanation}
     </div>
   );
