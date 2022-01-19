@@ -16,7 +16,9 @@ export const SpaceCard: React.FC<Props> = ({ key, id, title , date, url, explana
 
   return (
     <div className='space-card' key={key}>
-      <img className='space-image' src={!url ? "No photo available" : url} alt={title}/>
+      <a href={url} target="_blank">
+        <img className='space-image' src={!url ? "No photo available" : url} alt={title}/>
+      </a>
       <h2 className='img-text'>{!title ? "No title available" : title}</h2>
       <h3 className='img-text'>{!date ? "No date available" : date}</h3>
       <button
