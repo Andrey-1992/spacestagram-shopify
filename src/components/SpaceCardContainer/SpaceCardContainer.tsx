@@ -17,9 +17,11 @@ interface Props {
 }
 
 export const SpaceCardContainer: React.FC<Props> = ({ todayNasaApi}) => {
+
   return (
     <div className="SpaceCardContainer">
       <p>Space Card Container</p>
+      <SpaceCard nasaData={todayNasaApi} />
     </div>
   );
 }
