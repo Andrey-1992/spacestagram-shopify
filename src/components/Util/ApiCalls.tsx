@@ -7,7 +7,6 @@ export const fetchSpaceContainerImg = async () => {
     const data = await response.json()
     return data
   } catch(err) {
-    console.log(err.message)
     return err;
   }
 }
@@ -21,7 +20,6 @@ export const fetchTodaysPic = async () => {
     const data = await response.json()
     return data
   } catch(err) {
-    console.log(err.message)
     return err;
   }
 }

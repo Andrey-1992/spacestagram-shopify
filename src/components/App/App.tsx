@@ -2,9 +2,15 @@ import React from 'react';
 import './App.css';
 import { SpaceCardContainer } from '../SpaceCardContainer/SpaceCardContainer';
 import { Loading } from '../Loading/Loading';
+import { fetchSpaceContainerImg, fetchTodaysPic } from '../Util/ApiCalls';
+import { useState, useEffect } from 'react';
 
 
-export const App = () => {
+export const App: React.FC = () => {
+  const [spaceData, setSpaceData] = useState<any>([]);
+  const [error, setError] = useState<string>('');
+  const [isLoading, setIsLoading ] = useState<boolean>(true);
+
   return (
     <div className="App">
       <h1 className='header'>Spacestagram</h1>
