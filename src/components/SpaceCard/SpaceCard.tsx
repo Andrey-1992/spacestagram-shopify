@@ -16,13 +16,15 @@ export const SpaceCard: React.FC<Props> = ({ key, id, title , date, url, explana
 
   return (
     <div className='space-card' key={key}>
-      <img className='space-image' src={!url ? "No photo available" : url} alt={title}/>
-      <h2 className='pic-title'>{!title ? "No title available" : title}</h2>
-      <h2 className='capture-date'>{!date ? "No date available" : date}</h2>
+      <a href={url} target="_blank">
+        <img className='space-image' src={!url ? "No photo available" : url} alt={title}/>
+      </a>
+      <h2 className='img-text'>{!title ? "No title available" : title}</h2>
+      <h3 className='img-text'>{!date ? "No date available" : date}</h3>
       <button
         className='like-button'
         onClick={() => setIsFavorite(!isFavorite) }
-      >{isFavorite ? 'Liked!' : 'like' }</button>
+      >{isFavorite ? 'Liked!' : 'Like' }</button>
       <button 
         className="show-img-explanation" onClick={() => setShowExplanation(!showExplanation)}
       >{!showExplanation? '+' : '-'}</button>

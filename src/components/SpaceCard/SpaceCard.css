@@ -1,0 +1,55 @@
+.space-card {
+  border: 2px solid hsl(250, 89%, 14%);
+  border-radius: 3%;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.space-image {
+  border-radius: 2%;
+  margin-top: 0.5%;
+  width: 400px;
+  height: 400px;
+  opacity: .9;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.space-image:hover {
+  cursor: zoom-in;
+  opacity: 1;
+  transition: .5s ease-out;
+  transform: scale(1.02);
+}
+
+.img-text {
+  font-family:monospace;
+  font-size: x-large;
+  margin: 0.5%;
+  opacity: .6;
+}
+
+.img-text:hover {
+  opacity: 1;
+  transition: .3s ease-out;
+  transform: scale(1.01);
+}
+
+.img-explanation {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
