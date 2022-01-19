@@ -52,13 +52,10 @@ This application was built for the Shopify Front End Developer Intern Challenge.
 
 ## Illustrations
 
-_Desktop View_
 <img width="1299" alt="Spacestagram - Desktop View" src="https://user-images.githubusercontent.com/78002374/150081547-b34afd5a-70b4-4832-9ae2-f9c1395be583.png">
 
-_Mobile View_
 <img width="497" alt="Spacestagram - Mobile View" src="https://user-images.githubusercontent.com/78002374/150081609-0d4e1cd9-958c-4e45-a0b5-0991270f5c04.png">
 
-_Lighthouse Accessibility Test_
 <img width="504" alt="Spacestagram - Accessibility Test" src="https://user-images.githubusercontent.com/78002374/150081629-7f37bf99-641f-4e65-b092-56960c0dffb8.png">
 
 
