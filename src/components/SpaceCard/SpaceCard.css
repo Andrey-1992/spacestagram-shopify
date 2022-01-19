@@ -1,0 +1,6 @@
+.space-card {
+  border: 1px solid black;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
