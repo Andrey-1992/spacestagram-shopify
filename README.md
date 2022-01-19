@@ -47,7 +47,7 @@ This application was built for the Shopify Front End Developer Intern Challenge.
        - [Loading.tsx](src/components/Loading/Loading.tsx)
      - [index.css](src/index.css)
      - [index.tsx](src/index.tsx)
-     - __util__
+     - __Util__
        - [ApiCalls.js](src/components/Util/ApiCalls.tsx)
 
 ## Illustrations
