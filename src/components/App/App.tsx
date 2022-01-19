@@ -13,7 +13,6 @@ interface nasaApiData {
   service_version?: string
   title?: string
   url?: string
-  copyright?: string
 }
 
 export const App: React.FC = () => {

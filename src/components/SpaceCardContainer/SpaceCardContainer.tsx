@@ -11,18 +11,26 @@ interface nasaApiData {
   service_version?: string
   title?: string
   url?: string
-  copyright?: string
 }
 interface Props {
   nasaApi?: Array<nasaApiData>
+}
+
+let id = 0;
+function getId() {
+  return id++;
 }
 
 export const SpaceCardContainer: React.FC<Props> = ({nasaApi}) => {
   const dataContainer = nasaApi?.map(data => {
     return(
       <SpaceCard 
-        key={Date.now()}
+        key={getId()}
+        id={getId()}
         title={data.title}
+        date={data.date}
+        url={data.url}
+        explanation={data.explanation}
       />
     )
   })
