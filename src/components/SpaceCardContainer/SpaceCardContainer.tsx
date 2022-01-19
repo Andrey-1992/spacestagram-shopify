@@ -34,8 +34,7 @@ export const SpaceCardContainer: React.FC<Props> = ({nasaApi}) => {
   })
 
   return (
-    <div className="SpaceCardContainer">
-      <p>Space Card Container</p>
+    <div className='space-card-container'>
       {dataContainer}
     </div>
   );
