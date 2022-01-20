@@ -42,11 +42,20 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-button {
+.liked-btn {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   padding: 1%;
   margin-top: 1%;
+}
+
+.unliked-btn {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  padding: 1%;
+  margin-top: 1%;
+  background-color: #172739;
+  color: whitesmoke;
 }
 
 p {
