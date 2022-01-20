@@ -22,7 +22,7 @@ export const SpaceCard: React.FC<Props> = ({ key, id, title , date, url, explana
       <h2 className='img-text'>{!title ? "No title available" : title}</h2>
       <h3 className='img-text'>{!date ? "No date available" : date}</h3>
       <button
-        className='like-button'
+        className={isFavorite ? 'Liked!' : 'Like' }
         onClick={() => setIsFavorite(!isFavorite) }
       >{isFavorite ? 'Liked!' : 'Like' }</button>
       <button 
